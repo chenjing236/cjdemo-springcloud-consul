@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    consul:
+      host: 116.196.85.112:8500
+      port: 8500
+      discovery:
+        service-name: cjdemo-springcloud-consul
+        instance-id: ${spring.application.name}:${server.port}
+        prefer-ip-address: true
+      config:
+        enabled: true
+        watch:
+          enabled: true
+        format: yaml
+        data-key: data

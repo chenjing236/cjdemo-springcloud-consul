@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: cjdemo
+server:
+  port: 8080
+
+
+
